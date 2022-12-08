@@ -14,7 +14,7 @@ function TrackDetails({ track }) {
     }
 
     const response = await fetch(
-      "http://localhost:4001" + "/tracks/" + track._id,
+      "https://big-mewsic-api.onrender.com" + "/tracks/" + track._id,
       {
         method: "DELETE",
         headers: {

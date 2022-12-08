@@ -40,7 +40,7 @@ function NewTrack() {
     formData.append("cover", data.cover);
     formData.append("audio", data.audio);
 
-    const res = await fetch("http://localhost:4001" + "/tracks", {
+    const res = await fetch("https://big-mewsic-api.onrender.com" + "/tracks", {
       method: "POST",
       body: formData,
       headers: {

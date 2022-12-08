@@ -10,9 +10,12 @@ function Home() {
 
   useEffect(() => {
     const fetchTracks = async () => {
-      const res = await fetch("http://localhost:4001" + "/tracks", {
-        headers: { Authorization: `Bearer ${user.token}` },
-      });
+      const res = await fetch(
+        "https://big-mewsic-api.onrender.com" + "/tracks",
+        {
+          headers: { Authorization: `Bearer ${user.token}` },
+        }
+      );
       const data = await res.json();
 
       if (res.ok) {
